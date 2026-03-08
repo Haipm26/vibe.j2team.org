@@ -105,7 +105,7 @@ onUnmounted(() => document.removeEventListener('keydown', handleKeydown))
     <!-- Search & Filter -->
     <div class="mb-6 space-y-4 animate-fade-up" style="animation-delay: 100ms">
       <!-- Search input + Random button -->
-      <div class="flex gap-3">
+      <div class="flex flex-col sm:flex-row gap-3">
         <div class="relative flex-1">
           <svg
             class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-text-dim pointer-events-none"
@@ -135,7 +135,7 @@ onUnmounted(() => document.removeEventListener('keydown', handleKeydown))
         </div>
         <button
           :disabled="filteredPages.length === 0"
-          class="flex items-center gap-2 px-4 py-3 text-sm font-display tracking-wide border border-accent-coral text-accent-coral bg-accent-coral/10 transition-colors duration-200 hover:bg-accent-coral hover:text-bg-deep disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap"
+          class="flex items-center justify-center gap-2 px-4 py-3 text-sm font-display tracking-wide border border-accent-coral text-accent-coral bg-accent-coral/10 transition-colors duration-200 hover:bg-accent-coral hover:text-bg-deep disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap"
           @click="goToRandom"
         >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
