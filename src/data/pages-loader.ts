@@ -7,6 +7,11 @@ export const pageComponents = import.meta.glob<{ default: object }>('@/views/*/i
 // Hand-picked featured apps by Juno — these are pinned to the top of the homepage
 const featuredPaths = [
   '/blow-your-job',
+  '/project-42',
+  '/co-tuong',
+  '/cuoc-song-hang-ngay-cua-ai',
+  '/gach-bong',
+  '/windows-xp',
   '/chicken-shooter',
   '/chuyen-doi-luong',
   '/whack-a-bug',
@@ -23,6 +28,7 @@ const featuredPaths = [
   '/taboo-keyboard',
   '/tank-rescue',
   '/what-if',
+  '/bug-war-room',
 ]
 
 function extractPath(globKey: string): string {
